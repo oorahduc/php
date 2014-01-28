@@ -44,7 +44,7 @@
   $currencyCode = "EUR";	
   $shipBeforeDate = date("Y-m-d",strtotime("+3 days")); 
   $skinCode = "Iix4eLo8";
-  $merchantAccount = "JessePiscaerCOM";
+  $merchantAccount = "YourMerchantAccount";
   $sessionValidity = date("c",strtotime("+1 days")); 
   $shopperLocale = "en_US"; 
   $orderData = base64_encode(gzencode("Orderdata to display on the HPP can be put here"));
@@ -70,7 +70,7 @@
 
   // HMAC Key is a shared secret KEY used to encrypt the signature. Set up the HMAC 
   // key: Adyen Test CA >> Skins >> Choose your Skin >> Edit Tab >> Edit HMAC key for Test and Live 
-  $hmacKey = "123456";
+  $hmacKey = "YourHmacSecretKey";
   
   $merchantSig = base64_encode(pack("H*",hash_hmac(
   	'sha1',
