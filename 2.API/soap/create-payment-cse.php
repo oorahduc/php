@@ -59,7 +59,7 @@
 		  * - fraudOffset: Numeric value that will be added to the fraud score (optional)
 		  * - paymentRequest.additionalData.card.encrypted.json: The encrypted card catched by the POST variables.
 		  */
-		  
+
 		$result = $client->authorise(array(
 				"paymentRequest" => array(
 					"merchantAccount" => "YourMerchantAccount",  
@@ -73,7 +73,10 @@
 					"shopperReference" => "YourReference", 
 					"fraudOffset" => "0",
 					"additionalData" => array(
-						array("key" => "card.encrypted.json","value" => $_POST['adyen-encrypted-data'])
+						"entry" => new SoapVar(array(
+							"key" => new SoapVar("card.encrypted.json", XSD_STRING, "string", "http://www.w3.org/2001/XMLSchema", "key", "http://payment.services.adyen.com"),
+							"value" => new SoapVar($_POST['adyen-encrypted-data'], XSD_STRING, "string", "http://www.w3.org/2001/XMLSchema", "value", "http://payment.services.adyen.com")
+						), SOAP_ENC_OBJECT, "")
 					)
 				)
 			)
@@ -94,6 +97,8 @@
 		 print("<pre>");
 		 print($ex);
 		 print("</pre>");
+
+
 	 }	 
  }
 	  
@@ -132,9 +137,9 @@
 			</fieldset>	
 		</form>
 		
-		<script type="text/javascript" src="../../lib/adyen.encrypt.min.js"></script>
+		<script type="text/javascript" src="adyen.encrypt.js"></script>
 		<script type="text/javascript">
-			var form    = document.getElementById('adyen-encrypted-form');
+			var form  = document.getElementById('adyen-encrypted-form');
 			/* Put your WS users' CSE key here */
 			/* Adyen CA -> Settings -> Users -> Choose the WS user -> Copy CSE key */
 			var key = "YOUR-KEY-HERE-YOUR-KEY-HERE-YOUR-KEY-HERE-YOUR-KEY-HERE"
