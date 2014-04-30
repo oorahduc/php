@@ -67,6 +67,6 @@
 						
  }catch(SoapFault $ex){
 	 print("<pre>");
-	 print($exception);
+	 print($ex);
 	 print("<pre>");
  }
