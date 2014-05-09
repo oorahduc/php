@@ -36,7 +36,7 @@
 	  * - shopperEmail: The e-mail address of the shopper 
 	  * - shopperReference: The shopper reference, i.e. the shopper ID
 	  * - fraudOffset: Numeric value that will be added to the fraud score (optional)
-	  * - paymentRequest.additionalData.card.encrypted.json: The encrypted card catched by the POST variables.
+	  * - paymentRequest.additionalData.card.encrypted.json: The encrypted card caught by the POST variables.
 	  */
 	$request = array(
 		"action" => "Payment.authorise",
