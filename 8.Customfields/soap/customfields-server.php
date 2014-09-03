@@ -78,7 +78,7 @@
 		
 	}
 	
-	return array("checkResponse" => $response); array("response" => array(
+	return array("checkResponse" => $response);
  }
  
  $server->addFunction("check"); 
