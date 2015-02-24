@@ -21,7 +21,7 @@
   $shopperGender = "MALE"; 
   $shopperTelephoneNumber = "0104691602"; 
   $shopperIP = "62.128.7.69";
-
+ 
   $allowedMethods = ""; 
   $blockedMethods = ""; 
   $offset = ""; 
