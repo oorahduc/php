@@ -45,8 +45,8 @@ $request = array(
 	"paymentRequest3d.merchantAccount" => "YourMerchantAccount",
 	"paymentRequest3d.browserInfo.userAgent" => $_SERVER['HTTP_USER_AGENT'],
 	"paymentRequest3d.browserInfo.acceptHeader" => $_SERVER['HTTP_ACCEPT'],
-	"paymentRequest3d.md" => "31h..........vOXek7w",
-	"paymentRequest3d.paResponse" => "eNqtmF........wGVA4Ch",
+	"paymentRequest3d.md" => $_POST['MD'],
+	"paymentRequest3d.paResponse" => $_POST['PaRes'],
 	"paymentRequest3d.shopperIP" => "123.123.123.123"
 );
 

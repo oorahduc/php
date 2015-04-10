@@ -67,8 +67,8 @@ try {
 					"userAgent" => $_SERVER['HTTP_USER_AGENT'],
 					"acceptHeader" => $_SERVER['HTTP_ACCEPT']
 				),
-				"md" => "31h..........vOXek7w",
-				"paResponse" => "eNqtmF........wGVA4Ch",
+				"md" => $_POST['MD'],
+				"paResponse" => $_POST['PaRes'],
 				"shopperIP" => "123.123.123.123"
 			)
 		)
