@@ -79,8 +79,8 @@ $shopperInfo= array(
 /*Airline Data lines (If extra lines are needed, just copy all 7 line for each block and replace e.g. 'line3' with e.g. line4  and change the total numberOfLines*/
 	$airlineDataLines=array (
 					
-					"airline.passenger_name" => "Kate Winslet", //Required if airline data is supplied
-					"airline.ticket_number" => "XC123",  //Required if airline data is supplied
+					"airline.passenger_name" => "Kate Winslet", /
+					"airline.ticket_number" => "XC123", 
 					"airline.airline_code" => "111",
 					"airline.travel_agency_code" => "UNKNOWN",
 					"airline.travel_agency_name" => "UNKNOWN",
@@ -100,23 +100,23 @@ $shopperInfo= array(
 					"airline.passenger2.last_name" => "Pan",
 					"airline.passenger2.traveller_type" => "ADT",
 
-					"airline.leg1.depart_airport" => "HKG", //Required if leg info is needed
+					"airline.leg1.depart_airport" => "HKG", 
 					"airline.leg1.flight_number" => "364",
-					"airline.leg1.carrier_code" => "AA", //Required if leg info is needed
+					"airline.leg1.carrier_code" => "AA", 
 					"airline.leg1.fare_base_code" => "E",
 					"airline.leg1.class_of_travel" => "E",
 					"airline.leg1.stop_over_code" => "0",
-					"airline.leg1.destination_code" => "AMS",//Required if leg info is needed
+					"airline.leg1.destination_code" => "AMS",
 					"airline.leg1.date_of_travel" => "2015-02-19 00:00",
 					"airline.leg1.depart_tax" => "396.00",
 
-					"airline.leg2.depart_airport" => "PVG",//Required if leg info is needed
+					"airline.leg2.depart_airport" => "PVG",
 					"airline.leg2.flight_number" => "369",
-					"airline.leg2.carrier_code" => "AA",//Required if leg info is needed
+					"airline.leg2.carrier_code" => "AA",
 					"airline.leg2.fare_base_code" => "E",
 					"airline.leg2.class_of_travel" => "E",
 					"airline.leg2.stop_over_code" => "0",
-					"airline.leg2.destination_code" => "LTN",//Required if leg info is needed
+					"airline.leg2.destination_code" => "LTN",
 					"airline.leg2.date_of_travel" => "2015-02-20 00:00",
 					"airline.leg2.depart_tax" => "0.00",
 		);
