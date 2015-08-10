@@ -95,10 +95,16 @@ $shopperInfo= array(
 					"airline.passenger1.first_name" => "Kate",
 					"airline.passenger1.last_name" => "Winslet",
 					"airline.passenger1.traveller_type" => "ADT",
+					"airline.passenger1.date_of_birth" => "1980-05-02",
+					"airline.passenger1.phone_number" => "0031641212345",
+					
 
 					"airline.passenger2.first_name" => "Peter",
 					"airline.passenger2.last_name" => "Pan",
 					"airline.passenger2.traveller_type" => "ADT",
+					"airline.passenger2.date_of_birth" => "1981-05-02",
+					"airline.passenger2.phone_number" => "0031641212345",
+					
 
 					"airline.leg1.depart_airport" => "HKG", 
 					"airline.leg1.flight_number" => "364",
