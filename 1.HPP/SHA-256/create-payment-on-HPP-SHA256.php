@@ -29,7 +29,7 @@
                     "shopperLocale"     => "en_GB",
                     "skinCode"          => $skinCode,
                     "brandCode"         => "openinvoice",
-                    "shopperEmail"      => "guangmian@adyen.com",
+                    "shopperEmail"      => "test@adyen.com",
                     "shopperReference"  => "123",
                     
                     "shopper.FirstName"=> "Testperson-nl",
