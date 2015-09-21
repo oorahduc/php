@@ -91,17 +91,17 @@
                     
                     // Optional lodging data lines
                     "lodging.checkInDate" => "20150607",
-					"lodging.checkOutDate" => "20150607",
-					"lodging.folioNumber" => "1234",
-					"lodging.specialProgramCode" => "1",
-					"lodging.renterName"=>"Peter Pan",
-					"lodging.numberOfRoomRates" => "2",
+                    "lodging.checkOutDate" => "20150607",
+                    "lodging.folioNumber" => "1234",
+                    "lodging.specialProgramCode" => "1",
+                    "lodging.renterName"=>"Peter Pan",
+                    "lodging.numberOfRoomRates" => "2",
                     
-					"lodging.room1.rate"=>"1220",
-					"lodging.room1.numberOfNights" => "4",
+                    "lodging.room1.rate"=>"1220",
+                    "lodging.room1.numberOfNights" => "4",
                     
-					"lodging.room2.rate"=>"1220",
-					"lodging.room2.numberOfNights" => "2",
+                    "lodging.room2.rate"=>"1220",
+                    "lodging.room2.numberOfNights" => "2",
                     
     );
     
