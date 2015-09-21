@@ -28,8 +28,8 @@
                     "shipBeforeDate"    => "2015-07-01",
                     "shopperLocale"     => "en_GB",
                     "skinCode"          => $skinCode,
-                    "brandCode"         => "klarna",
-                    "shopperEmail"      => "guangmian@adyen.com",
+                    "brandCode"         => "",
+                    "shopperEmail"      => "test@adyen.com",
                     "shopperReference"  => "123",
                     
                     // Shopper information
