@@ -40,7 +40,7 @@
                     "shopper.DateOfBirthYear"=> "1970",
                     "shopper.Gender"=> "MALE",
                     "shopper.TelephoneNumber"=> "0104691602", 
-                    "shopper.IP"=> "62.128.7.69",
+                    "shopperIP"=> "62.128.7.69",
                     
                     // Billing Address fields (used for AVS checks)
                     "billingAddress.street" =>"Neherkade",
