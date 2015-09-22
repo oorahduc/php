@@ -33,14 +33,14 @@
                     "shopperReference"  => "123",
                     
                     // Shopper information
-                    "shopper.FirstName"=> "Testperson-nl",
-                    "shopper.LastName"=> "Approved",
-                    "shopper.DateOfBirthDayOfMonth"=> "10",
-                    "shopper.DateOfBirthMonth"=> "07",
-                    "shopper.DateOfBirthYear"=> "1970",
-                    "shopper.Gender"=> "MALE",
-                    "shopper.TelephoneNumber"=> "0104691602",
-                    "shopper.IP"=> "62.128.7.69",
+                    "shopper.firstName"=> "Testperson-nl",
+                    "shopper.lastName"=> "Approved",
+                    "shopper.dateOfBirthDayOfMonth"=> "10",
+                    "shopper.dateOfBirthMonth"=> "07",
+                    "shopper.dateOfBirthYear"=> "1970",
+                    "shopper.gender"=> "MALE",
+                    "shopper.telephoneNumber"=> "0104691602",
+                    "shopperIP"=> "62.128.7.69",
                     
                     // Billing Address fields (used for AVS checks)
                     "billingAddress.street" =>"Neherkade",
