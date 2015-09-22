@@ -49,6 +49,7 @@
                     "billingAddress.postalCode" => "2521VA",
                     "billingAddress.stateOrProvince" => "NH",
                     "billingAddress.country" => "NL",
+                    "billingAddressType" => "",
                     
                     // Delivery/Shipping Address fields
                     "deliveryAddress.street" => "Neherkade",
