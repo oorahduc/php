@@ -76,3 +76,5 @@ $request["merchantSig"] = $merchantSig;
  }
  
  curl_close($ch);
+
+?>
