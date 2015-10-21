@@ -36,7 +36,7 @@ $request = array(
                 "merchantReference" => "Unique Merchant Reference",
                 "skinCode"          =>  $skinCode,
                 "merchantAccount"   =>  $merchantAccount,
-                "sessionValidity"   => "2015-12-25T10:31:06Z",
+                "sessionValidity"   => date("c",strtotime("+1 days")),
                 "countryCode"       => "NL",
 );
  
