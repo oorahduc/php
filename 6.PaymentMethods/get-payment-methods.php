@@ -26,29 +26,36 @@
   * The following fields are required for the directory 
   * service. 
   */
- $request = array(
-	"paymentAmount" => "100",
-	"currencyCode" => "EUR",
-	"merchantReference" => "Request payment methods",
-	"skinCode" => "YourSkinCode",
-	"merchantAccount" => "YourMerchantAccount",
-	"sessionValidity" => date("c",strtotime("+1 days")),
-	"countryCode" => "NL",
-	"merchantSig" => "",
- );	
+$skinCode        = "YourSkinCode";
+$merchantAccount = "YourMerchantAccount";
+$hmacKey         = "YourHMACKey";
+
+$request = array(
+                "paymentAmount"     => "199",
+                "currencyCode"      => "EUR",
+                "merchantReference" => "Unique Merchant Reference",
+                "skinCode"          =>  $skinCode,
+                "merchantAccount"   =>  $merchantAccount,
+                "sessionValidity"   => "2015-12-25T10:31:06Z",
+                "countryCode"       => "NL",
+);
  
- // If you're running PHP 5 >= 5.1.2, PECL hash >= 1.1 you can use hash_hmac(), if you don't
- // you can use HMAC Pear (http://pear.php.net/package/Crypt_HMAC/download)HMAC Key is a shared secret KEY used to 
- // encrypt the signature. Set up the HMAC  key: Adyen Test CA >> Skins >> Choose your Skin >> Edit Tab >> 
- // Edit HMAC key for Test and Live 
- $hmacKey = "YourHmacSecretKey";
- 
- $request["merchantSig"] = base64_encode(pack("H*",hash_hmac(
-  	'sha1',
-	$request["paymentAmount"] . $request["currencyCode"] . $request["merchantReference"] . 
-	$request["skinCode"] .  $request["merchantAccount"] . $request["sessionValidity"],
-	$hmacKey
- )));
+// Calculation of SHA-256
+
+// The character escape function
+$escapeval = function($val) {
+    return str_replace(':','\\:',str_replace('\\','\\\\',$val));
+};
+
+// Sort the array by key using SORT_STRING order
+ksort($request, SORT_STRING);
+
+// Generate the signing data string
+$signData = implode(":",array_map($escapeval,array_merge(array_keys($request), array_values($request))));
+
+// base64-encode the binary result of the HMAC computation
+$merchantSig = base64_encode(hash_hmac('sha256',$signData,pack("H*" , $hmacKey),true));
+$request["merchantSig"] = $merchantSig;
 
  $ch = curl_init();
  curl_setopt($ch, CURLOPT_URL, "https://test.adyen.com/hpp/directory.shtml");
