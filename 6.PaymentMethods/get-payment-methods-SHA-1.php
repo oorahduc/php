@@ -67,3 +67,5 @@
  }
  
  curl_close($ch);
+
+?>
